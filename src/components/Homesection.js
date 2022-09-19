@@ -21,12 +21,12 @@ export default function Homesection() {
                     <li></li>
                 </ul>
                 <div className='sectionhome'>
-                    <div className="row m-0 p-0   ">
+                    <div className="row  " style={{ margin: "auto", paddingRight: '25px', paddingLeft: '0' }} >
                         <div className="col-sm-5 pt-5 ">
 
                         </div>
-                        <div className="col-sm-7 pt-5   text-center   ">
-                            <p className="homeheading ">Thanks for getting in Touch</p>
+                        <div className="col-sm-7      text-center   " >
+                            <p className="homeheading text-center ">Thanks for getting in Touch</p>
                             <p className="homeheading2">Welcome to my Portfolio</p>
                             <p className="homeheading3">“Amit ’s my name, and developing’s my game!”.<br />I’m working as web developer in Infranix technologys private ltd Lucknow India.I have developed many website and apart from the I have been part of web design project, office work and as freelancer. .</p>
                             <div className="pt-lg-5 pb-lg-5 ">

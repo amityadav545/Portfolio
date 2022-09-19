@@ -14,14 +14,7 @@ export default function About() {
                 </div>
 
                 <div className='col-sm'>
-                    <div className="media my-4">
 
-
-                        <div className="media-body">
-                            <h5 className="mt-0">Website Design</h5>
-                            Web development is the work involved in developing a web site for the Internet...
-                        </div>
-                    </div>
 
 
 
@@ -29,7 +22,7 @@ export default function About() {
 
                         <div className="media-body">
                             <h5 className="mt-0">Website Developer</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            Web development is the work involved in developing a web site for the Internet...
                         </div>
                     </div>
 
@@ -37,7 +30,19 @@ export default function About() {
 
                         <div className="media-body">
                             <h5 className="mt-0">Creative</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <ul>
+                                <li>Something new
+                                </li>
+                                <li>Something exciting
+                                </li>
+                                <li>Something helpful
+                                </li>
+                                <li>Something promising
+                                </li>
+                                <li>Something extraordinary
+                                </li>
+                                <li>Something good</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
