@@ -8,7 +8,7 @@ export default function Homesection() {
 
             <div className="container-fluid m-0 pt-5 p-0 homebg "  >
 
-                <ul className="circles">
+                <ul className="circles ">
                     <li></li>
                     <li></li>
                     <li></li>

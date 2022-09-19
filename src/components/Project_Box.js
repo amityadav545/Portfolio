@@ -6,7 +6,7 @@ export default function Project_Box(props) {
     })
     return (
         <div className='col-sm-4 d-flex justify-content-center '>
-            <div className="card my-4 cardbox show">
+            <div className="card my-4 cardbox showv">
                 <video src="video.mp4" controls></video>
                 <div className="card-body">
                     <h5 className="card-title">{props.project_name}</h5>

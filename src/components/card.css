@@ -18,15 +18,15 @@
 
 
 
-.show {
+.showv {
 
     opacity: 1;
-    animation-name: example;
+    animation-name: boxshow;
     animation-duration: 0.5s;
 
 }
 
-@keyframes example {
+@keyframes boxshow {
     from {
         opacity: 0;
         transform: translateY(100px) scale(0) rotateY(180deg);
@@ -36,8 +36,3 @@
         opacity: 1;
     }
 }
-
-/* .show:active {
-
-    opacity: 0; */
-/* } */
