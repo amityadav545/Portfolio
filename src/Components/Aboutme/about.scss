@@ -1,0 +1,171 @@
+.About_container {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .About_title {
+
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 2px solid black;
+        padding: 10px;
+
+        .bdr {
+            border: 5px solid red;
+            width: 30px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -5px;
+            background-color: red;
+
+
+        }
+    }
+
+    .About_content {
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 70px;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+        .About_content_left {
+            width: 100%;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .About_content_right {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+
+
+            .Button {
+
+                width: 100%;
+                text-align: center;
+                margin: 20px;
+
+                .Hire_me {
+                    padding: 5px 30px;
+                    border: 1px solid black;
+                    background-color: rgb(245, 208, 115);
+                    border-radius: 10px;
+                    font-size: 20px;
+                    color: white;
+                    margin: 5px 10px;
+
+                    &:hover {
+                        background-color: gold;
+                        cursor: pointer;
+                    }
+
+                }
+
+                .get_resume {
+                    padding: 5px 30px;
+                    border: 1px solid black;
+                    background-color: rgb(115, 245, 171);
+                    border-radius: 10px;
+                    font-size: 20px;
+                    color: black;
+                    margin: 5px 10px;
+
+                    &:hover {
+                        background-color: rgb(0, 255, 72);
+                        cursor: pointer;
+                    }
+
+                }
+            }
+
+            p {
+                margin: 10px;
+            }
+
+            ul {
+
+                padding: 5px;
+                padding-left: 20px;
+
+                li {
+                    margin: 10px;
+
+                    font-size: 15px;
+                    color: rgb(86, 80, 80);
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width:'1000px') {
+        .About_content {
+            flex-direction: column;
+            width: 100%;
+
+            .About_content_right {
+                margin: 0px;
+                padding: 0px;
+
+                .Button {
+
+                    width: 100%;
+                    text-align: center;
+                    margin: 0px;
+
+                    .Hire_me {
+                        padding: 5px 30px;
+                        border: 1px solid black;
+                        background-color: rgb(245, 208, 115);
+                        border-radius: 10px;
+                        font-size: 20px;
+                        color: white;
+                        margin: 20px 10px;
+
+                        &:hover {
+                            background-color: gold;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    .get_resume {
+                        padding: 5px 30px;
+                        border: 1px solid black;
+                        background-color: rgb(115, 245, 171);
+                        border-radius: 10px;
+                        font-size: 20px;
+                        color: black;
+                        margin: 20px 10px;
+
+                        &:hover {
+                            background-color: rgb(0, 255, 72);
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}

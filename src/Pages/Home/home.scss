@@ -1,0 +1,36 @@
+.home {
+    .home_nav {
+        width: 100%;
+    }
+
+    .home_profile {
+        border-bottom: 2px solid gray;
+        width: 100%;
+    }
+
+    .home_about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .home_resume {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .home_contact {
+        width: 100%;
+    }
+
+    .home_footer {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+    // padding: 10px 0px;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+
+    @media screen and(max-width:'400px') {
+        font-size: 15px;
+    }
+
+    @media screen and(max-width:'250px') {
+        font-size: 10px;
+    }
+}
