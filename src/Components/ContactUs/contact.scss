@@ -106,7 +106,7 @@
 
                 .css-i4bv87-MuiSvgIcon-root {
                     font-size: 50px;
-                    animation: movekt 1.5s ease-in-out infinite;
+                    animation: movelt 1.5s ease-in-out infinite;
 
                     &:hover {
                         font-size: 55px;
@@ -114,14 +114,14 @@
 
                     }
 
-                    @keyframes movekt {
+                    @keyframes movelt {
 
                         0%,
                         100% {
                             transform: rotate(-20deg);
 
 
-                            color: yellow;
+                            color: rgb(4, 255, 0);
 
 
 
@@ -130,7 +130,7 @@
 
                         50% {
                             transform: rotate(-50deg);
-                            color: green;
+                            color: rgb(14, 255, 239);
                         }
                     }
                 }
@@ -247,10 +247,11 @@
                     border: 0px;
                     margin-top: 5px;
                     margin-bottom: 15px;
+                    background: #000;
 
-                    .css-i4bv87-MuiSvgIcon-root {
+                    .css-vubbuv {
                         font-size: 50px;
-                        animation: moveIt 1.5s ease-in-out infinite;
+                        animation: movelt 1.5s ease-in-out infinite;
 
                         &:hover {
                             font-size: 55px;
@@ -258,14 +259,14 @@
 
                         }
 
-                        @keyframes moveIt {
+                        @keyframes movelt {
 
                             0%,
                             100% {
                                 transform: rotate(-20deg);
 
 
-                                color: yellow;
+                                color: rgb(165, 233, 150);
 
 
 
@@ -274,7 +275,7 @@
 
                             50% {
                                 transform: rotate(-50deg);
-                                color: green;
+                                color: rgb(3, 252, 239);
                             }
                         }
                     }
