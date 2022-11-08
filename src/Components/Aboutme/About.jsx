@@ -3,10 +3,19 @@ import '../Aboutme/about.scss'
 import aboutimg from '../images/aboutimg.jpg'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useContext } from 'react';
+import Ncontext from '../../NContext';
 export default function About() {
+
+    const context = useContext(Ncontext);
+    const { Handlescroll1 } = context;
+    const { ref6 } = context
+
+
+
     AOS.init();
     return (
-        <div className='About_container' id='about'>
+        <div className='About_container' ref={ref6}>
             <div className='About_title'>
 
                 <p style={{ fontSize: '40px' }}>ABOUT ME</p>
@@ -31,7 +40,7 @@ export default function About() {
                     </ul>
 
                     <div className='Button'>
-                        <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} href='#contact'>Hire Me</a></button>
+                        <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} onClick={Handlescroll1} >Bring In</a></button>
                         <button className='get_resume'>Resume</button>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useRef, useContext } from 'react'
 import '../Resume/resume.scss'
 import HistoryIcon from '@mui/icons-material/History';
 import SchoolIcon from '@mui/icons-material/School';
@@ -10,13 +10,41 @@ import "aos/dist/aos.css";
 
 
 import 'react-circular-progressbar/dist/styles.css';
+import Ncontext from '../../NContext';
 export default function Resume() {
+    const ref = useRef(null);
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const context = useContext(Ncontext);
+    const { ref4 } = context
+
+    const scrollevent = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+
+
+    }
+    const scrollevent1 = () => {
+        ref1.current?.scrollIntoView({ behavior: 'smooth' });
+
+
+    }
+    const scrollevent2 = () => {
+        ref2.current?.scrollIntoView({ behavior: 'smooth' });
+
+
+    }
+    const scrollevent3 = () => {
+        ref3.current?.scrollIntoView({ behavior: 'smooth' });
+
+
+    }
 
     AOS.init();
 
     return (
-        <div className='Resume_container' id='resume'>
-            <div className='Resume_title' data-aos="zoom-in">
+        <div className='Resume_container' id='resume' ref={ref4}>
+            <div className='Resume_title' >
                 <p style={{ fontSize: '40px' }}>RESUME</p>
                 <p>My formal Bio Details</p>
                 <div className='bdr'></div>
@@ -25,10 +53,10 @@ export default function Resume() {
             <div className='Resume_content' data-aos="zoom-in">
                 <div className='Resume_content_left'>
                     <ul>
-                        <li><a href="#work"><HistoryIcon /></a><a href="#work" className='Resume_content_li'>Work History</a></li>
-                        <li><a href="#education"><SchoolIcon /></a><a href="#education" className='Resume_content_li'>Education</a></li>
-                        <li><a href="#skill"><ComputerIcon /></a><a href="#skill" className='Resume_content_li'>Programming Skills</a></li>
-                        <li><a href="#project"><AssuredWorkloadIcon /></a><a href="#project" className='Resume_content_li'>Projects</a></li>
+                        <li onClick={scrollevent}><a ><HistoryIcon /></a><a className='Resume_content_li'>Work History</a></li>
+                        <li onClick={scrollevent1} ><a><SchoolIcon /></a><a className='Resume_content_li'>Education</a></li>
+                        <li onClick={scrollevent2}><a ><ComputerIcon /></a><a className='Resume_content_li'>Programming Skills</a></li>
+                        <li onClick={scrollevent3}><a ><AssuredWorkloadIcon /></a><a className='Resume_content_li'>Projects</a></li>
                     </ul>
 
 
@@ -36,7 +64,7 @@ export default function Resume() {
 
                 </div>
                 <div className='Resume_content_right'>
-                    <div id="work" className='work'>
+                    <div className='work' ref={ref}>
                         <div className='work_box' >
                             <p className='work_title'>Infranix Technologys private Ltd. Lucknow India</p>
                             <p className='work_title2'>August 2022-Present</p>
@@ -51,7 +79,7 @@ export default function Resume() {
 
 
                     </div>
-                    <div id="education" className='education'>
+                    <div id="education" className='education' ref={ref1}>
                         <div className='education_box' >
                             <p className='education_title'>B.tech in Computer Science & Engineering </p>
                             <p className='education_title2'>Maharana Pratap Engineering College Kanpur India</p>
@@ -78,19 +106,19 @@ export default function Resume() {
                         </div>
                     </div>
 
-                    <div id="skill" className='skill ' >
+                    <div id="skill" className='skill ' ref={ref2}>
                         <div className='skill_box' >
                             <div style={{ width: "130px", height: "130px" }} >
 
-                                <CircularProgressbar value={66} text={`${66}%`}
+                                <CircularProgressbar value={80} text={`${80}%`}
 
 
 
                                     styles={buildStyles({
-                                        pathColor: "#f00",
-                                        textColor: "red",
-                                        // trailColor: "#eee",
-                                        // strokeLinecap: "butt"
+                                        pathColor: "green",
+                                        textColor: "green",
+                                        trailColor: "#eee",
+                                        strokeLinecap: "butt"
                                     })}
 
 
@@ -101,12 +129,12 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={75} text={`${75}%`}
                                     styles={buildStyles({
-                                        pathColor: "#f00",
-                                        textColor: "red",
-                                        // trailColor: "#eee",
-                                        // strokeLinecap: "butt"
+                                        pathColor: "yellow",
+                                        textColor: "yellow",
+                                        trailColor: "#eee",
+                                        strokeLinecap: "butt"
                                     })} />
                                 <p style={{ textAlign: 'center' }}>ReactJs</p>
                             </div>
@@ -114,12 +142,12 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={90} text={`${90}%`}
                                     styles={buildStyles({
-                                        pathColor: "#f00",
-                                        textColor: "red",
-                                        // trailColor: "#eee",
-                                        // strokeLinecap: "butt"
+                                        pathColor: "lightgreen",
+                                        textColor: "lightgreen",
+                                        trailColor: "#eee",
+                                        strokeLinecap: "butt"
                                     })} />
                                 <p style={{ textAlign: 'center' }}>Html</p>
                             </div>
@@ -127,10 +155,10 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={90} text={`${90}%`}
                                     styles={buildStyles({
-                                        pathColor: "#f00",
-                                        textColor: "red",
+                                        pathColor: "cyan",
+                                        textColor: "cyan",
                                         // trailColor: "#eee",
                                         // strokeLinecap: "butt"
                                     })} />
@@ -140,10 +168,10 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={90} text={`${90}%`}
                                     styles={buildStyles({
-                                        pathColor: "lightgreen",
-                                        textColor: "lightgreen",
+                                        pathColor: "lightblue",
+                                        textColor: "lightblue",
                                         // trailColor: "#eee",
                                         // strokeLinecap: "butt"
                                     })} />
@@ -153,12 +181,12 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={70} text={`${70}%`}
                                     styles={buildStyles({
-                                        pathColor: "cyan",
-                                        textColor: "red",
-                                        // trailColor: "#eee",
-                                        // strokeLinecap: "butt"
+                                        pathColor: "darkblue",
+                                        textColor: "darkblue",
+                                        trailColor: "#eee",
+                                        strokeLinecap: "butt"
                                     })} />
                                 <p style={{ textAlign: 'center' }}>Rest API</p>
                             </div>
@@ -166,7 +194,7 @@ export default function Resume() {
                         <div className='skill_box'>
                             <div style={{ width: "130px", height: "130px" }}>
 
-                                <CircularProgressbar value={66} text={`${50}%`}
+                                <CircularProgressbar value={70} text={`${70}%`}
                                     styles={buildStyles({
                                         pathColor: "blue",
                                         textColor: "blue",
@@ -217,7 +245,7 @@ export default function Resume() {
                             </div>
                         </div>
                     </div>
-                    <div id="project" className='project'>
+                    <div id="project" className='project' ref={ref3}>
                         <div className='project_box'>
                             <p className='project_title'>Personal Portfolio Website <span style={{ color: 'yellow' }}>(2022)</span></p>
                             <p className='project_title2'>Technologies Used: React JS, SCSS</p>
@@ -243,6 +271,6 @@ export default function Resume() {
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

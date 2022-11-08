@@ -1,18 +1,32 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../ContactUs/contact.scss'
 import SendIcon from '@mui/icons-material/Send';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Ncontext from '../../NContext';
+import { ClassNames } from '@emotion/react';
 export default function Contact() {
-    const [first, setfirst] = useState("")
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [req, setReq] = useState("")
+    const context = useContext(Ncontext);
+    const { ref5 } = context
 
     const handleChange = (event) => {
-        setfirst(event.target.value);
+        setName(event.target.value);
+
+    }
+    const handleChange2 = (event) => {
+        setEmail(event.target.value);
+
+    }
+    const handleChange3 = (event) => {
+        setReq(event.target.value);
 
     }
     AOS.init();
     return (
-        <div className='Contact' id="contact">
+        <div className='Contact' ref={ref5}>
             <div className='Contact_title'>
 
                 <p style={{ fontSize: '40px' }}>CONTACT US</p>
@@ -22,17 +36,17 @@ export default function Contact() {
             <div className='Contact_form' data-aos="zoom-in">
                 <form >
                     <label>
-                        Name
-                        <input type="text" value={first} onChange={handleChange} placeholder="Enter your full Name" />
+                        <p style={{ textAlign: 'start', width: '90%' }}>Name</p>
+                        <input type="text" value={name} onChange={handleChange} placeholder="Enter your full Name" required />
                     </label>
 
                     <label>
-                        Email
-                        <input type="email" value={first} onChange={handleChange} placeholder='enter your Email' />
+                        <p style={{ textAlign: 'start', width: '90%' }}>   Email</p>
+                        <input type="email" value={email} onChange={handleChange2} placeholder='enter your Email' required />
                     </label>
                     <label>
-                        Requirement
-                        <textarea rows="6" value={first} onChange={handleChange} placeholder="Your Requirment" />
+                        <p style={{ textAlign: 'start', width: '90%' }}> Requirement</p>
+                        <textarea rows="6" value={req} onChange={handleChange3} placeholder="Your Requirment" required />
                     </label>
 
                     <button type='submit'><SendIcon /></button>

@@ -17,7 +17,7 @@
         background-image: url('../images/profilebg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.6;
+        opacity: 0.9;
 
     }
 
@@ -83,6 +83,10 @@
 
         .User_Name {
             font-size: 30px;
+            background: linear-gradient(to right, #30CFD0 0%, #f7f6f8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
         }
 
         .User_content {
@@ -100,12 +104,13 @@
 
             .Hire_me {
                 padding: 5px 30px;
-                border: 1px solid black;
+                border: 1px solid rgb(242, 234, 10);
                 background-color: rgb(245, 208, 115);
                 border-radius: 10px;
                 font-size: 20px;
                 color: white;
                 margin: 5px 10px;
+
 
                 &:hover {
                     background-color: gold;
@@ -116,7 +121,7 @@
 
             .get_resume {
                 padding: 5px 30px;
-                border: 1px solid black;
+                border: 1px solid rgb(17, 236, 68);
                 background-color: rgb(115, 245, 171);
                 border-radius: 10px;
                 font-size: 20px;
@@ -149,7 +154,7 @@
             height: 50vh;
             width: 50vh;
             border: 3px solid white;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: -1px -1px 25px white, 12px 12px 25px rgb(165 181 248 / 40%);
             border-radius: 50%;
             margin: 10px 10px;
             cursor: pointer;
@@ -162,7 +167,7 @@
 }
 
 
-@media screen and(max-width:'1115px') {
+@media screen and (max-width:'1115px') {
 
 
     .Profile {
@@ -184,7 +189,7 @@
             background-image: url('../images/profilebg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.9;
 
         }
 
@@ -239,7 +244,7 @@
 
                 .Hire_me {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(242, 234, 10);
                     background-color: rgb(245, 208, 115);
                     border-radius: 10px;
                     font-size: 20px;
@@ -255,7 +260,7 @@
 
                 .get_resume {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(9, 233, 39);
                     background-color: rgb(115, 245, 171);
                     border-radius: 10px;
                     font-size: 20px;
@@ -286,7 +291,7 @@
             .user_pic {
                 height: 50vh;
                 width: 50vh;
-                border: 1px solid black;
+                border: 3px solid white;
                 border-radius: 50%;
                 margin: 10px 10px;
                 cursor: pointer;
@@ -300,7 +305,7 @@
 }
 
 
-@media screen and(max-width:'1000px') {
+@media screen and (max-width:'1000px') {
 
 
     .Profile {
@@ -322,7 +327,7 @@
             background-image: url('../images/profilebg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.9;
 
         }
 
@@ -377,7 +382,7 @@
 
                 .Hire_me {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(242, 234, 10);
                     background-color: rgb(245, 208, 115);
                     border-radius: 10px;
                     font-size: 20px;
@@ -393,7 +398,7 @@
 
                 .get_resume {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(15, 232, 26);
                     background-color: rgb(115, 245, 171);
                     border-radius: 10px;
                     font-size: 20px;
@@ -424,7 +429,7 @@
             .user_pic {
                 height: 40vh;
                 width: 40vh;
-                border: 1px solid black;
+                border: 3px solid white;
                 border-radius: 50%;
                 margin: 10px 10px;
                 cursor: pointer;
@@ -442,7 +447,7 @@
 
 
 
-@media screen and(max-width:'900px') {
+@media screen and (max-width:'900px') {
 
 
     .Profile {
@@ -464,7 +469,7 @@
             background-image: url('../images/profilebg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.9;
 
         }
 
@@ -521,7 +526,7 @@
 
                 .Hire_me {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(242, 234, 10);
                     background-color: rgb(245, 208, 115);
                     border-radius: 10px;
                     font-size: 20px;
@@ -537,7 +542,7 @@
 
                 .get_resume {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(7, 235, 72);
                     background-color: rgb(115, 245, 171);
                     border-radius: 10px;
                     font-size: 20px;
@@ -568,7 +573,7 @@
             .user_pic {
                 height: 35vh;
                 width: 35vh;
-                border: 1px solid black;
+                border: 3px solid white;
                 border-radius: 50%;
                 margin: 10px 10px;
                 cursor: pointer;
@@ -581,7 +586,7 @@
     }
 }
 
-@media screen and(max-width:'580px') {
+@media screen and (max-width:'580px') {
 
 
     .Profile {
@@ -603,7 +608,7 @@
             background-image: url('../images/profilebg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.9;
 
         }
 
@@ -681,7 +686,7 @@
 
                 .Hire_me {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(242, 234, 10);
                     background-color: rgb(245, 208, 115);
                     border-radius: 10px;
                     font-size: 20px;
@@ -697,7 +702,7 @@
 
                 .get_resume {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(21, 236, 43);
                     background-color: rgb(115, 245, 171);
                     border-radius: 10px;
                     font-size: 20px;
@@ -728,7 +733,7 @@
             .user_pic {
                 height: 35vh;
                 width: 35vh;
-                border: 1px solid black;
+                border: 3px solid white;
                 border-radius: 50%;
                 margin: 10px 10px;
                 cursor: pointer;
@@ -742,7 +747,7 @@
 }
 
 
-@media screen and(max-width:'400px') {
+@media screen and (max-width:'400px') {
 
 
     .Profile {
@@ -764,7 +769,7 @@
             background-image: url('../images/profilebg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.9;
 
         }
 
@@ -842,7 +847,7 @@
 
                 .Hire_me {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(242, 234, 10);
                     background-color: rgb(245, 208, 115);
                     border-radius: 10px;
                     font-size: 20px;
@@ -858,7 +863,7 @@
 
                 .get_resume {
                     padding: 5px 30px;
-                    border: 1px solid black;
+                    border: 1px solid rgb(17, 243, 47);
                     background-color: rgb(115, 245, 171);
                     border-radius: 10px;
                     font-size: 20px;
@@ -889,7 +894,7 @@
             .user_pic {
                 height: 35vh;
                 width: 35vh;
-                border: 1px solid black;
+                border: 3px solid white;
                 border-radius: 50%;
                 margin: 10px 10px;
                 cursor: pointer;
