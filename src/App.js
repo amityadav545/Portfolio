@@ -15,19 +15,19 @@ function App() {
 
 
 
-    ref4.current?.scrollIntoView({ behavior: 'smooth' });
+    ref4.current?.scrollIntoView({ behavior: 'instant' });
   }
   const Handlescroll1 = () => {
 
 
 
-    ref5.current?.scrollIntoView({ behavior: 'smooth' });
+    ref5.current?.scrollIntoView({ behavior: 'instant' });
   }
   const Handlescroll2 = () => {
 
 
 
-    ref6.current?.scrollIntoView({ behavior: 'smooth' });
+    ref6.current?.scrollIntoView({ behavior: 'instant' });
   }
 
   const topScrollevent = () => {
