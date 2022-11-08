@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import Typical from 'react-typical'
+import Typed from "react-typed"
 import amitimg from '../images/amit yadav-1.png'
 import Ncontext from '../../NContext';
 
@@ -35,15 +35,19 @@ export default function Profile() {
                 <div className='User_Name'>
                     <h1>Amit kumar yadav</h1>
                 </div>
-                <div className='User_Position'>
-                    {" "}
+                <div className='User_Position' >
+
                     <h2 style={{ color: 'gold' }}>
-                        {" "}
-                        <Typical
 
-                            steps={['Full Stack Developer', 3000, 'Back End Developer', 3000, 'Front End developers', 3000]}
-                            loop={Infinity}
-
+                        <Typed
+                            strings={[
+                                " Full Stack Developer",
+                                "Front End Developer",
+                                "Back End Developer",
+                            ]}
+                            typeSpeed={30}
+                            backSpeed={20}
+                            loop
                         />
                     </h2>
                 </div>
