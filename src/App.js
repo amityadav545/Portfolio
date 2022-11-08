@@ -9,6 +9,7 @@ function App() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
 
   const Handlescroll = () => {
 
@@ -29,8 +30,14 @@ function App() {
     ref6.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  const topScrollevent = () => {
+
+    ref7.current?.scrollIntoView({ behavior: 'smooth' });
+
+  }
+
   return (
-    <Ncontext.Provider value={{ ref4: ref4, ref5: ref5, ref6: ref6, Handlescroll: Handlescroll, Handlescroll1: Handlescroll1, Handlescroll2: Handlescroll2 }}>
+    <Ncontext.Provider value={{ ref4: ref4, ref5: ref5, ref6: ref6, ref7: ref7, Handlescroll: Handlescroll, Handlescroll1: Handlescroll1, Handlescroll2: Handlescroll2, topScrollevent: topScrollevent }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>
