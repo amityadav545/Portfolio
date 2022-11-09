@@ -56,7 +56,7 @@ export default function Profile() {
                     the development team and done quite some contribution to open source as well.</div>
 
                 <div className='Button'>
-                    <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} onClick={Handlescroll1}>Bring In</a></button>
+                    <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} onClick={Handlescroll1}>Explore</a></button>
                     <button className='get_resume'> Resume</button>
                 </div>
             </div>

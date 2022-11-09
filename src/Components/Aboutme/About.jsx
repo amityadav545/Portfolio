@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Aboutme/about.scss'
-import aboutimg from '../images/aboutimg.jpg'
+import aboutimg from '../images/about img.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useContext } from 'react';
@@ -24,7 +24,7 @@ export default function About() {
             </div>
             <div className='About_content' data-aos="zoom-in">
                 <div className='About_content_left'>
-                    <img src={aboutimg} alt={aboutimg} style={{ height: '100%', width: '100%' }} />
+                    <img src={aboutimg} alt={aboutimg} style={{ height: '100%', width: '100%', }} />
                 </div>
                 <div className='About_content_right'>
                     <p style={{ fontSize: '14px', lineHeight: '30px' }}>Hi! My name is AMIT KUMAR YADAV. I am a Web Developer, and I'm very passionate and dedicated to my work. With experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.
@@ -40,7 +40,7 @@ export default function About() {
                     </ul>
 
                     <div className='Button'>
-                        <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} onClick={Handlescroll1} >Bring In</a></button>
+                        <button className='Hire_me'><a style={{ color: 'black', textDecoration: 'none' }} onClick={Handlescroll1} >Explore</a></button>
                         <button className='get_resume'>Resume</button>
                     </div>
                 </div>
