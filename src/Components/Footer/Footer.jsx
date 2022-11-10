@@ -23,7 +23,7 @@ export default function Footer() {
             <div className='Con_details'>
                 <h6>Keep in Touch</h6>
                 <p><PhoneForwardedIcon /><span>+916388131984</span></p>
-                <p><EmailIcon /><span>amitky545@gmail.com</span></p>
+                <p><EmailIcon /><span><a href="mailto:amitky545@gmail.com?subject = Feedback&body = Message " target="_blank" style={{ textDecoration: 'none', color: 'white' }}>amitky545@gmail.com</a></span></p>
             </div>
             <p>© {date} Copyright: amitkumarportfolio.com</p>
         </div>
