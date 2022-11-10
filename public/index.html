@@ -37,7 +37,8 @@
       height: 100vh;
 
 
-      transition: all 0.5s ease-in-out;
+
+
     }
   </style>
 </head>
@@ -55,11 +56,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
 
-    var t = document.querySelector(".lds-spinner")
+    var t = document.querySelector(".lds-spinner");
+
 
     function test() {
+      t.style.display = 'none';
 
-      t.style.opacity = 0;
+
 
     }</script>
 </body>
