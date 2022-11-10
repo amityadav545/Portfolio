@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../Footer/footer.scss'
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 import EmailIcon from '@mui/icons-material/Email';
+import footergif from '../../Components/images/footer.gif'
 export default function Footer() {
     const [date, setdate] = useState('')
 
@@ -25,7 +26,14 @@ export default function Footer() {
                 <p><PhoneForwardedIcon /><span><a href="tel:+916388131984 " style={{ textDecoration: 'none', color: 'white' }}>+916388131984</a></span></p>
                 <p><EmailIcon /><span><a href="mailto:amitky545@gmail.com?subject = Feedback&body = Message " target="_blank" style={{ textDecoration: 'none', color: 'white' }}>amitky545@gmail.com</a></span></p>
             </div>
-            <p>© {date} Copyright: amitkumarportfolio.com</p>
+            <ul>
+                <li>
+                    <img style={{ height: '100%', width: '100%' }} src={footergif} alt={footergif} />
+                </li>
+                <li><img style={{ height: '100%', width: '100%' }} src={footergif} alt={footergif} /></li>
+                <li><img style={{ height: '100%', width: '100%' }} src={footergif} alt={footergif} /></li>
+                <li><img style={{ height: '100%', width: '100%' }} src={footergif} alt={footergif} /></li>
+            </ul>
         </div >
     )
 }

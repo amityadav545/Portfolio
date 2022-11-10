@@ -1,10 +1,13 @@
 .footer {
     background-image: linear-gradient(to right, #aa076b, #61045f);
     // padding: 10px 0px;
+
     color: aliceblue;
     font-size: 20px;
-    line-height: 40px;
 
+    width: 100%;
+
+    bottom: 0px;
     text-align: center;
     white-space: nowrap;
 
@@ -13,6 +16,9 @@
 
     .Details {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
 
         p {
             font-size: 12px;
@@ -24,6 +30,9 @@
 
     .Con_details {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
 
         p {
             font-size: 12px;
@@ -35,6 +44,19 @@
 
     }
 
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            height: 40px;
+            width: 40px;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
 
 
 }
@@ -60,6 +82,18 @@
 
             p {}
 
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                height: 40px;
+                width: 40px;
+            }
         }
 
 
@@ -98,7 +132,17 @@
 
         }
 
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
 
+            li {
+                height: 30px;
+                width: 30px;
+            }
+        }
 
     }
 }
