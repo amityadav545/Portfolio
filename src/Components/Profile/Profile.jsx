@@ -22,7 +22,7 @@ export default function Profile() {
 
         <div className='Profile'>
 
-            <a href='tel:+916388131984'> <img className='mouseimg' src={mouseimg} alt={mouseimg} /></a>
+            <a href='tel:+916388131984' style={{ zIndex: "200000" }}> <img className='mouseimg' src={mouseimg} alt={mouseimg} /></a>
             <div className='profile_left'>
 
                 <ul>
