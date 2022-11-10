@@ -39,6 +39,8 @@ export default function Home() {
 
 
     return (
+
+
         <div className='home' ref={ref7}>
             <div className='home_nav'>
                 <Navbar />
@@ -60,5 +62,6 @@ export default function Home() {
                 <img className='topbox_int' src={topimg} alt={topimg} />
             </div>
         </div>
+
     )
 }
