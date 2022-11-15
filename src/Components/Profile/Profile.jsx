@@ -37,7 +37,7 @@ export default function Profile() {
                 </div>
                 <div className='User_Position' >
 
-                    <h2 style={{ color: 'gold' }}>
+                    <p style={{ color: 'gold' }}>
 
                         <Typed
                             strings={[
@@ -49,7 +49,7 @@ export default function Profile() {
                             backSpeed={20}
                             loop
                         />
-                    </h2>
+                    </p>
                 </div>
                 <div className='User_content'>I am always ready to work on new and exciting technologies emerging nowadays.
                     I have good work experience as a MERN Stack Developer in startup(s) and UI/UX Designer where I was core member of

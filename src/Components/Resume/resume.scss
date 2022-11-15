@@ -320,4 +320,213 @@
 
         }
     }
+
+
+    @media screen and (max-width:'850px') {
+        .Resume_title {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+
+        .Resume_content {
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            height: 100vh;
+
+            .Resume_content_left {
+                border: 1px solid black;
+                flex: 1;
+                height: 100%;
+
+                ul {
+                    justify-content: space-evenly;
+
+                    li {
+                        border-radius: 0px;
+                        justify-content: center;
+
+                        a {
+                            .css-i4bv87-MuiSvgIcon-root {
+                                font-size: 5rem;
+                            }
+                        }
+                    }
+                }
+
+                .Resume_content_li {
+                    display: none;
+                }
+
+            }
+
+            .Resume_content_right {
+                border: 1px solid black;
+                flex: 5;
+                height: 100%;
+                overflow: hidden;
+                scroll-behavior: smooth;
+
+
+
+
+
+
+
+
+
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width:'650px') {
+        .Resume_title {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+
+        .Resume_content {
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            height: 100vh;
+
+            .Resume_content_left {
+                border: 1px solid black;
+                flex: 1;
+                height: 100%;
+
+                ul {
+                    justify-content: space-evenly;
+
+                    li {
+                        border-radius: 0px;
+                        justify-content: center;
+
+                        a {
+                            .css-i4bv87-MuiSvgIcon-root {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                .Resume_content_li {
+                    display: none;
+                }
+
+            }
+
+            .Resume_content_right {
+                border: 1px solid black;
+                flex: 5;
+                height: 100%;
+                overflow: hidden;
+                scroll-behavior: smooth;
+
+
+
+
+
+
+
+
+
+
+            }
+
+        }
+    }
+
+
+    @media screen and (max-width:'600px') {
+        .Resume_title {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+
+        .Resume_content {
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            height: 100vh;
+
+            .Resume_content_left {
+                border: 1px solid black;
+                flex: 1;
+                height: 100%;
+
+                ul {
+                    justify-content: space-evenly;
+
+                    li {
+                        border-radius: 0px;
+                        justify-content: center;
+
+                        a {
+                            .css-i4bv87-MuiSvgIcon-root {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                .Resume_content_li {
+                    display: none;
+                }
+
+            }
+
+            .Resume_content_right {
+                border: 1px solid black;
+                flex: 5;
+                height: 100%;
+                overflow: hidden;
+                scroll-behavior: smooth;
+
+
+
+
+
+
+
+
+
+
+            }
+
+        }
+    }
 }
